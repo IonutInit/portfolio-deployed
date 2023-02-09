@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" version="1.1" viewBox="0 0 150 150" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(-887.61 -167.51)">
+        
+            <g transform="matrix(1.0862 0 0 1.0862 665.38 -14.436)">
+                <rect x="204.59" y="167.51" width="138.1" height="138.1" fill="none"/>
+            </g>
+            <g transform="matrix(2.1144 0 0 2.1144 856.89 136.79)">
+                <g transform="matrix(1.0174 0 0 1.0174 2.5403 -7.7321)">
+                    <circle cx="46.649" cy="56.746" r="32.584" fill="#2b2d42" stroke="#fff" stroke-width=".59px"/>
+                </g>
+                <g transform="translate(-.44127 18.949)">
+                    
+                    <text x="24.735px" y="47.884px" fill="rgb(43,45,66)" font-family="'Alphakind'" font-size="60px" stroke="white" stroke-linecap="butt" stroke-miterlimit="2" stroke-width="1px">R</text>
+                </g>
+                <g transform="translate(29.307 32.452)">
+                    
+                    <text x="24.735px" y="47.884px" fill="rgb(43,45,66)" font-family="'Alphakind'" font-size="60px" stroke="white" stroke-linecap="butt" stroke-miterlimit="2" stroke-width="1px">F</text>
+                </g>
+            </g>
+        
+    </g>
+</svg>
