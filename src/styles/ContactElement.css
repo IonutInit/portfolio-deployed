@@ -73,7 +73,7 @@
 }
 
 .show img {
-    transform: translate(-90%, -50%) scale(0.5);
+    transform: translate(-90%, -50%) scale(0.4);
     transition: var(--transition-in);
     opacity: 0.3;
 }

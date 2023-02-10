@@ -27,7 +27,7 @@ const MessageParser = ({ children, actions }: any) => {
         const botReply = await response.json();
         // console.log(botReply)
         // console.log(chatId)
-        return botReply;
+        return `${botReply}.`;
       } catch (err) {
         throw err;
       }
