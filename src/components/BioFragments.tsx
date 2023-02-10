@@ -53,7 +53,6 @@ export const Bio3 = () => {
       <div className="bio-details-container">
         <p>
           It was this complexity that drove me to the power and magic of coding.
-          {/* eslint-disable-next-line prettier/prettier */}
           What choices do you have when you&apos;re all alone with 100+ column
           csv file?
           <br />
@@ -79,7 +78,6 @@ export const Bio4 = () => {
       <div className="bio-details-container">
         <p>
           Sometimes, things have their own way of working out. Some health
-          {/* eslint-disable-next-line prettier/prettier */}
           issues convinced that it&apos;s time to review my life choices. So I
           gave up the business with few regrets, and took a well deserved break.
           <br />
