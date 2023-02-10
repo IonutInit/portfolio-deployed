@@ -12,14 +12,6 @@
     overflow: hidden;
 }
 
-@media only screen and (max-width: 1024px) {
-    .portfolio-element-container {
-        width: 80%;
-        height: 30vw;
-    }
-}
-
-
 .description {
     width: 100%;
     display: flex;
@@ -124,6 +116,14 @@ button:not(:hover) {
 }
 
 
+
+@media only screen and (max-width: 1024px) {
+    .portfolio-element-container {
+        width: 80%;
+        height: 30vw;
+    }
+}
+
 @media (max-width: 992px) {
     .portfolio-element-container {
         height: 30vh;
@@ -133,9 +133,6 @@ button:not(:hover) {
     } */
     .description {
         font-size: small;
-    }
-    .button-container a {
-       /* background-color: blue; */
     }
     .button-container {
         /* margin-top: -7%; */
@@ -156,5 +153,28 @@ button:not(:hover) {
         transform: translate(-80%, -70%) scale(0.7);
         transition: var(--transition-in);
         opacity: 0.3;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .portfolio-element-container:hover img {
+        transform: translate(-85%, -55%) scale(0.6);
+    }
+
+    .portfolio-element-container:hover {
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .portfolio-element-container {
+        height: 35vh;
+    }
+    .portfolio-element-container:hover {
+        padding-top: 10%;
+    }
+    .portfolio-element-container:hover img {
+        transform: translate(-85%, -80%) scale(0.6);
     }
 }

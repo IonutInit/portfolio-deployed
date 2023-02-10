@@ -1,9 +1,12 @@
-import { useRef, useState, useEffect } from "react";
+// Can't get process to work!
+
+import { useRef, useState, KeyboardEvent } from "react";
 import emailjs from "@emailjs/browser";
 
 // import * as dotenv from 'dotenv';
 
 import email from "../assets/images/email.svg";
+import close from "../assets/images/close_button.svg";
 
 import "../styles/ContactElement.css";
 
@@ -11,18 +14,29 @@ import "../styles/ContactElement.css";
 
 const ContactElement = () => {
   const [messageSent, setMessageSent] = useState(false);
+  const [showContact, setShowContact] = useState(false);
   const form = useRef();
 
-  const refreshButton = () => {
+  // const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+  //   if (e.key === "Enter") {
+  //     setShowContact(false);
+  //   }
+  // };
+
+  const handleClick = () => {
     setMessageSent(false);
+    setTimeout(() => {
+      setMessageSent(false);
+      setShowContact(false);
+    }, 2000);
   };
 
   // const service = process.env.EMAIL_PUBLIC_KEY
   // const template = process.env.EMAIL_TEMPLATE_ID
   // const key = process.env.EMAIL_PUBLIC_KEY
 
-  const sendEmail = (e: React.SyntheticEvent) => {
-    e.preventDefault();
+  const sendEmail = (event: React.SyntheticEvent) => {
+    event.preventDefault();
 
     emailjs
       .sendForm(
@@ -41,7 +55,11 @@ const ContactElement = () => {
   };
 
   return (
-    <div className="contact-element-container" onMouseEnter={refreshButton}>
+    <div
+      className={`contact-element-container ${showContact ? "show" : ""}`}
+      onMouseEnter={() => setShowContact(true)}
+      onTouchStart={() => setShowContact(true)}
+    >
       <img src={email} alt="email icon" />
       <form ref={form} onSubmit={sendEmail}>
         <h3>Get in touch</h3>
@@ -58,7 +76,7 @@ const ContactElement = () => {
           Message
           <textarea name="message" required />
         </label>
-        <button type="submit" value="Send">
+        <button type="submit" value="Send" onClick={handleClick}>
           {messageSent ? `Thank you` : `Submit`}
         </button>
       </form>
@@ -67,6 +85,16 @@ const ContactElement = () => {
           ...or use your email directly
         </button>
       </a>
+      <img
+        src={close}
+        className="close"
+        // eslint-disable-next-line jsx-a11y/no-noninteractive-element-to-interactive-role
+        role="button"
+        onClick={() => setShowContact(false)}
+        // onKeyDown={(e) => handleKeyDown(e)}
+        alt="close button"
+        tabIndex={0}
+      />
     </div>
   );
 };

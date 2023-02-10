@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Chatbot from "react-chatbot-kit";
@@ -6,10 +6,10 @@ import config from "./chatbot/config";
 import MessageParser from "./chatbot/MessageParser";
 import ActionProvider from "./chatbot/ActionProvider";
 
-import Header from "./elements/Header";
-import Footer from "./elements/Footer";
-import Home from "./elements/Home";
-import Bio from "./components/Bio";
+import Header from "./display/Header";
+import Footer from "./display/Footer";
+import Home from "./display/Home";
+import Bio from "./display/Bio";
 
 import "@picocss/pico/css/pico.min.css";
 import "./styles/chatbot.css";
