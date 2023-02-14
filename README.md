@@ -1,7 +1,7 @@
 # Portfolio
 
-This is the deployed version built with Create React App
+This is the deployed version of my portfolio, built with Create React App
 
 ---
 
-To see the original version, made with Vite and having all the original formatitng and linting, go to github.
+The original version, made with Vite and having all the original formatitng and linting, is available at [https://github.com/IonutInit/portfolio](https://github.com/IonutInit/portfolio).
